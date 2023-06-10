@@ -7,7 +7,8 @@ import Typography from '@mui/material/Typography';
 
 function Dish({id,name,image,description,is_vegeterian,is_gluten_free}) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <div style={{display : 'flex' }}>
+    <Card sx={{ maxWidth:"200px", height: '300px', minHeight: 'fit-content', margin: '10px' }}>
     <CardMedia
       component="img"
       height="140"
@@ -27,7 +28,8 @@ function Dish({id,name,image,description,is_vegeterian,is_gluten_free}) {
        is vegeterian : {is_vegeterian.toString()}
       </Typography>
     </CardContent>
-  </Card>
+    </Card>
+    </div>
   )
 }
 

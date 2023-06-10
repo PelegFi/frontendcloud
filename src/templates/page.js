@@ -44,7 +44,7 @@ function Page() {
                 setValue(index);
                 getDishes(category.id);
               }}
-              style={{ display: 'flex', alignItems: 'center', padding: '10px', cursor: 'pointer', backgroundColor: value === index ? '#ddd' : 'transparent' }}
+              style={{ display: 'flex', alignItems: 'center', padding: '10px', backgroundColor: value === index ? '#ddd' : 'transparent' }}
             >
               <img style={{ maxWidth: '50px', maxHeight: '50px', marginRight: '10px' }} src={category.image} alt={category.name} />
               <ListItemText primary={category.name} />
@@ -52,7 +52,7 @@ function Page() {
           ))}
         </List>
       </div>
-      <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '200px' }}>
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '200px'  }}>
         {dishes.length > 0 ? (
           dishes.map((dish) => (
             <Dish
